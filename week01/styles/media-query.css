@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+@media only screen and (min-width: 650px){
+    
+    body{
+        font-family: "Roboto";
+    }
+
+    h1{
+        background-color: rgb(178, 178, 236) ;
+    }
+
+    footer{
+        background-color: rgb(178, 178, 236) ;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 30px;
+    }
+
+    section{
+        padding: 30px ;
+        border: solid rgb(178, 178, 236);
+        border-width: 8px;
+    }
+    
+    
+}
