@@ -6,8 +6,11 @@
         font-family: "Roboto";
     }
 
+    header{
+        background-color:   black;
+    }
+
     h1{
-        background-color: black ;
         color: white;
     }
 
