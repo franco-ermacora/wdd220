@@ -18,7 +18,6 @@
         display: grid;
         grid-row: 1fr;
         padding-bottom: 30px;
-        border: solid rgb(178, 178, 236);
     }
 
     section{
