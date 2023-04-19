@@ -1,0 +1,1 @@
+let LastModif = new Date(document.lastModified);

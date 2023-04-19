@@ -1,26 +1,28 @@
 * {
+	margin:0;
+	padding:0;
 	box-sizing:border-box;
 }
 body {
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: 16px;
-	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 18px;
 }
 
 h2 {
 	margin-bottom: .5rem;
 }
 main {
-	border: 1px solid rgba(0,0,0,.1);
+	border: 1px solid #bbb;
 	padding: 1rem;
 	background-color: #bed;
-	box-shadow: 0 0 20px rgba(0,0,0,.3);
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
 
-div {
+p {
 	margin: 1rem;
 	border:1px solid rgba(0,0,0,.1);
 	padding: .5rem;
@@ -28,20 +30,21 @@ div {
 	font-size: smaller;
 }
 
-.step-reset {
-  counter-reset: step+4;
+fieldset {
+	margin: 1.5rem;
 }
-.step {
-  counter-increment: step;
+span {
+	font-weight: 700;
 }
-.step::before {
-  content: '#' counter(step) ':  ';
-  color: green;
+#date1 {
+	color: forestgreen;
 }
 
-input {padding: .5rem;}
+.highlight {
+	color: navy;
+}
 
-aside{
+.message-box{
 	margin: 1rem;
 	border: 1px solid rgba(0,0,0,.1);
 	padding: .5rem;

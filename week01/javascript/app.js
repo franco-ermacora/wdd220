@@ -1,37 +1,64 @@
 // Select the HTML element to manipulate
-const today1 = document.querySelector('#today1');
-const today2 = document.querySelector('#today2');
-const message = document.querySelector('aside');
-
-// Varibles for activity use
-let citynames = ["New York","Sacramento","Cleveland","South Bend","Tampa Bay","Corpus Christi"];
-let volume = 409;
-
-function getCelsius(fahrenheit) {
-	return (fahrenheit - 32) * (5/9);
-}
-
-// Set up the Date format object parameter for toLocaleDateString method.
-const options = {
+const date1 = document.querySelector("#date1");
+const message = document.querySelector("#emessage");
+const p = document.querySelector('p');
+// Try to complete the method with options
+try {
+	const options = {
 		weekday: "long",
 		day: "numeric",
 		month: "long",
 		year: "numeric"
 	};
+	date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
+} catch (e) {
+	console.log("Error with code or your browser does not support Locale");
+}
 
-// Question #5 (change)
-today1.innerHTML = new Date().toLocaleDateString("en-US", options);
-// Question #6 (change)
-today2.innerHTML = `<strong>Volume</strong>: ${volume} liters`;
+// Long hand method ... building day and month names from built-in date methods.
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
+const months = [
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"May",
+	"Jun",
+	"Jul",
+	"Aug",
+	"Sep",
+	"Oct",
+	"Nov",
+	"Dec"
+];
 
+function getTemperature(fahrenheit) {
+	return (fahrenheit - 32) * (5/9);
+}
+
+const d = new Date();
+const dayName = daynames[d.getDay()];
+const monthName = months[d.getMonth()];
+const year = d.getFullYear();
+const dateNew = `${monthName} ${d.getDate()}, ${year}`;
+const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+document.querySelector("#date2").textContent = fulldate;
+document.querySelector("#date1").textContent = dateNew;
+
+
+document.querySelector('p').innerHTML = 'Welcome to <em>our</em> neighborhood!';
 let quantity = document.querySelector('#q').value;
-// Question #8
-document.querySelector('aside').innerHTML = 'Welcome to <mark>our</mark> neighborhood!';
-// Question #9
-document.querySelector('#temp').value = `${getCelsius(89).toFixed(1)} °C`;
-// Question #10
+document.querySelector("#temp").value = getTemperature(89).toFixed(1);
 const divs = document.querySelectorAll('div');
-document.querySelector('#divs').textContent = `${divs.length} divs in document.`;
-// Question #11
+let citynames = ["New York","Sacramento","Cleveland","South Bend","Tampa Bay","Corpus Christi"];
 let filterC = citynames.filter(city => city.charAt(0) === 'S');
-document.querySelector('#c-names').textContent = filterC;
+
+document.querySelector("#city").textContent = filterC;
