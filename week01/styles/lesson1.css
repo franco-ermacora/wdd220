@@ -1,0 +1,35 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    align-items: center;
+    color: white;
+    background-color:rgb(96, 96, 192);
+    border-radius: 10px;
+    font-size:1.5em;
+}
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(96, 96, 192);
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+#yellow {
+    color: yellow;
+}
