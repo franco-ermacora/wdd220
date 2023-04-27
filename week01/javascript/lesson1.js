@@ -10,5 +10,5 @@ let currentDate = `${day}/${month}/${year} ${minutes}:${seconds}:${mili}`;
 
 
 document.querySelector("#time").innerHTML = currentDate;
-
+document.querySelector("#year").innerHTML = year;
 //hola 

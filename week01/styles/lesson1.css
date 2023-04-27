@@ -33,7 +33,6 @@ header {
 }
 footer {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     background-color: rgb(96, 96, 192);
     align-items: center;
     justify-items: center;
