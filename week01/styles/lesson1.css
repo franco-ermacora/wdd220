@@ -17,18 +17,18 @@ h2 {
 }
 
 header img {
-
+    float: left;
     width: 200px;
     height: auto;
 }
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 1em;
     align-items: center;
+    justify-items: center;
     color: white;
-    background-color:rgb(96, 96, 192);
+    background-color: rgb(96, 96, 192);
     font-size:1.5em;
 }
 footer {
