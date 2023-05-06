@@ -28,12 +28,12 @@ header {
     align-items: center;
     justify-items: center;
     color: white;
-    background-color: rgb(96, 96, 192);
+    background-color: #1B365C;
     font-size:1.5em;
 }
 footer {
     display: grid;
-    background-color: rgb(96, 96, 192);
+    background-color: #1B365C;
     align-items: center;
     justify-items: center;
     color: white;

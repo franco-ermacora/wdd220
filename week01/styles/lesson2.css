@@ -10,7 +10,7 @@ header{
     border-radius: 0px;
     font-size: 1.8em;
     color: white;
-    background-color: #7f71a0;
+    background-color: #1B365C;;
     justify-items: center;
     align-items: start;
 }
@@ -26,14 +26,16 @@ section{
 footer{
     display: grid;
     justify-items: center;
-    background-color: #7f71a0;
+    background-color: #1B365C;
     color: white;
 
 }
-
+header h1{
+    background-color: #1B365C;
+}
 
 h1{
-    background-color: #7f71a0;
+    background-color: #7EA1C4;
     font-family: "Montserrat", sans-serif;
     font-size: 1.0em;
     border-top-left-radius: 10px;
@@ -74,13 +76,15 @@ h2 ,h3 {
     footer{
         display: grid;
         justify-items: center;
-        background-color: #7f71a0;
+        background-color: #1B365C;
         color: white;
 
     }
-
+    header h1{
+        background-color: #1B365C;
+    }
     h1{
-        background-color: #7f71a0;
+        background-color: #7EA1C4;
         font-family: "Montserrat", sans-serif;
         font-size: 1.0em;
         border-top-left-radius: 10px;
@@ -119,13 +123,13 @@ h2 ,h3 {
     footer{
         display: grid;
         justify-items: center;
-        background-color: #7f71a0;
+        background-color: #1B365C;
         color: white;
 
     }
 
     h1{
-        background-color: #7f71a0;
+        background-color: #7EA1C4
         font-family: "Montserrat", sans-serif;
         font-size: 1.5em;
         border-top-left-radius: 10px;
