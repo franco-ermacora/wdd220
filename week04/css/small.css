@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Poppins:wght@300&display=swap');
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+nav {
+	margin: 10px auto;
+}
+
+header{
+	background-color: #1B365C;
+	font-family: "Poppins", serif;
+	display: flex;
+}
+#imgh{
+	justify-content: center;
+	display: grid;
+	align-items: center;
+}
+
+#imgr1 {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+#imgr2 {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+#t1{
+	justify-content: start;
+	display: grid;
+	padding-left: 10px;
+	align-content: center;
+	justify-items: start;
+	color: white;
+}
+#hamButton {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: fit-content;
+	font-size: 1.5rem;
+	padding: .5rem;
+	color: #7EA1C4;
+	background-color: #1B365C;
+	border: solid #7EA1C4 ;
+	border-radius: 5px;
+
+}
+
+aside {
+	margin: 0.5rem;
+	border: 1px solid #7EA1C4;
+	padding: 0.75rem 1rem;
+}
+
+#actual {
+	color: #1B365C;
+	font-size: 1.3em;
+	background-color: #7EA1C4;
+	text-align: center;
+	grid-row: 2/3;
+	grid-column: 1/6;
+	display: grid;
+	align-content: center;
+}
+.burguer {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+}
+.burguer li {
+	display: none;
+}
+.burguer li a {
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.burguer li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.burguer.responsive li {
+	display: grid;
+	width: 100%;
+}
+.burguer.responsive li a {
+	display: grid;
+}
+
+footer{
+    display: grid; 
+    background-color: #af6767;
+    color: white;
+
+
+}
+
+.todas{
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	padding: 10px;
+}
+#event{
+	padding: 10px;
+	background-color: #bbb;
+	margin: 5px;
+	grid-row: 2/3;
+	border: 2px solid black;
+	display: grid;
+}
+#weather{
+	padding: 10px;
+	background-color: #bbb;
+	margin: 5px;
+	grid-row: 3/4;
+	border: 2px solid black;
+	display: grid;
+}
+#join{
+	padding: 10px;
+	background-color: #bbb;
+	margin: 5px;
+	grid-row: 6/7;
+	border: 2px solid black;
+	display: grid;
+}
+#hero{
+	padding: 10px;
+	background-color: #bbb;
+	margin: 5px;
+	grid-row: 1/2;
+	border: 2px solid black;
+	display: grid;
+}
+#news{
+	padding: 10px;
+	background-color: #bbb;
+	margin: 5px;
+	grid-row: 4/5;
+	border: 2px solid black;
+	display: grid;
+}
+#spotlight{
+	padding: 10px;
+	background-color: #bbb;
+	margin: 5px;
+	grid-row: 5/6;
+	border: 2px solid black;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+footer{
+	display: grid;
+	background-color: #1B365C ;
+	color: white;
+	margin: 10px;
+	font-family: "Poppins", serif;
+}
+#imgf{
+	align-content: end;
+	display: grid;
+	justify-content: center;
+	margin-top: 5px;
+
+}
+
+#f1{
+	text-align: center;
+	justify-content: center;
+	display: grid;
+	padding-left: 10px;
+	align-content: center;
+}
+
+#f2{
+	text-align: center;
+	justify-content: center;
+}
+
+#f3{
+	text-align: center;
+	justify-content: center;
+	border-top: 1px solid #999;
+}
+.spot{
+	border: 2px solid black;
+	margin: 5px;
+	padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

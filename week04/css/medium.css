@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Poppins:wght@300&display=swap');
+
+@media only screen and (min-width: 37.5em) {
+    header{
+        background-color: #1B365C;
+        font-family: "Poppins", serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr 80px 80px 80px;
+        grid-template-rows: 1fr 45px ;
+    }
+    #imgh{
+        justify-content: center;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-items: center;
+    }
+
+    #imgr1 {
+        display: grid;
+        grid-column: 3/4;
+        justify-content: center;
+        grid-row: 1/2;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    #imgr2 {
+        display: grid;
+        grid-column: 4/5;
+        justify-content: center;
+        grid-row: 1/2;
+        align-items: center;
+    }
+
+    #t1{
+		grid-column: 2/3;
+		justify-content: start;
+		display: grid;
+		padding-left: 10px;
+		align-content: center;
+        grid-row: 1/2;
+        justify-items: start;
+        color: white;
+	}
+    button {
+        display: grid;
+    }
+	#hamButton {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: fit-content;
+		font-size: 1.5rem;
+		padding: .5rem;
+		color: #7EA1C4;
+        background-color: #1B365C;
+        border: solid #7EA1C4 ;
+        border-radius: 5px;
+
+	}
+	.burguer {
+		flex-direction: column;
+		list-style: none;
+		background-color: #7EA1C4;
+        
+	}
+	.burguer li a {
+		padding: 1.15rem;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+        
+	}
+	.burguer li a:hover {
+		background-color: #1B365C;
+		color: #7EA1C4;
+		font-weight: 700;
+	}
+    .burguer.responsive{
+        grid-column: 1/6;
+        grid-row: 3/4;
+    }
+    .burguer.responsive li {
+        display: grid;
+        width: 100%;
+        
+    }
+    aside {
+        margin: 0.5rem;
+        border: 1px solid #7EA1C4;
+        padding: 0.75rem 1rem;
+    }
+
+    #actual {
+		color: #1B365C;
+        font-size: 1.3em;
+		background-color: #7EA1C4;
+		text-align: center;
+        grid-row: 2/3;
+        grid-column: 1/6;
+        display: grid;
+        align-content: center;
+	}
+	
+	
+	.todas{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: repeat(5, 250px);
+		padding: 10px;
+	}
+	#event{
+		padding: 10px;
+		background-color: #bbb;
+		margin: 5px;
+		grid-column: 1/2;
+		grid-row: 5/6;
+		border: 2px solid black;
+		display: grid;
+	}
+	#weather{
+		padding: 10px;
+		background-color: #bbb;
+		margin: 5px;
+		grid-column: 2/3;
+		grid-row: 5/6;
+		border: 2px solid black;
+		display: grid;
+	}
+	#join{
+		padding: 10px;
+		background-color: #bbb;
+		margin: 5px;
+		grid-column: 1/3;
+		grid-row: 4/5;
+		border: 2px solid black;
+		display: grid;
+	}
+	#hero{
+		padding: 10px;
+		background-color: #bbb;
+		margin: 5px;
+		grid-column: 1/3;
+		grid-row: 1/2;
+		border: 2px solid black;
+		display: grid;
+	}
+	#news{
+		padding: 10px;
+		background-color: #bbb;
+		margin: 5px;
+		grid-column: 1/3;
+		grid-row: 2/3;
+		border: 2px solid black;
+		display: grid;
+	}
+	#spotlight{
+		padding: 10px;
+		background-color: #bbb;
+		margin: 5px;
+		grid-column: 1/3;
+		grid-row: 3/4;
+		border: 2px solid black;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	footer{
+		display: grid;
+		background-color: #1B365C;
+		color: white;
+        font-family: "Poppins", serif;
+	}
+	#imgf{
+		grid-column: 1/2;
+		align-content: center;
+		display: grid;
+		justify-content: end;
+	}
+
+	#f1{
+		grid-column: 2/3;
+		justify-content: start;
+		display: grid;
+		padding-left: 10px;
+		align-content: center;
+        justify-items: start;
+       
+	}
+    #f1 h2{
+        font-size: 1.2em;
+    }
+	#f2{
+		grid-column: 3/4;
+		justify-content: start;
+		display: grid;
+	}
+
+	#f3{
+		grid-column: 1/4;
+		text-align: center;
+		border-top: 1px solid #7EA1C4;
+	}
+
+}
