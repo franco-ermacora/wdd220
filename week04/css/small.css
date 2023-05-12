@@ -7,13 +7,14 @@ nav {
 header{
 	background-color: #1B365C;
 	font-family: "Poppins", serif;
-	display: flex;
+	display: grid;
 }
 #imgh{
 	justify-content: center;
 	display: grid;
 	align-items: center;
 	margin-left: 5px;
+	margin-top: 10px;
 }
 
 #imgr1 {
@@ -49,7 +50,7 @@ header{
 	background-color: #1B365C;
 	border: solid #7EA1C4 ;
 	border-radius: 5px;
-
+	margin-top: 20px;
 }
 
 aside {
