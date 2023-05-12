@@ -9,7 +9,7 @@
         background-color: #1B365C;
         font-family: "Poppins", serif;
 	}
-
+	
     aside {
         margin: 0.5rem;
         border: 1px solid #7EA1C4;
@@ -67,8 +67,11 @@
 	.burguer li {
 		display: block;
 		flex: 1 1 auto;
+		
 	}
-
+	.burguer li a{
+		color: white;
+	}
 	#hamButton {
 		display: none; 
 	} 
