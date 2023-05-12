@@ -9,7 +9,7 @@
         grid-template-rows: 1fr 45px ;
     }
     #imgh{
-        justify-content: center;
+        justify-content: end;
         display: grid;
         grid-column: 1/2;
         grid-row: 1/2;
