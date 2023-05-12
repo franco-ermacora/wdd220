@@ -18,6 +18,7 @@ header{
 	justify-content: center;
 	display: grid;
 	align-items: center;
+	margin-left: 5px;
 }
 
 #imgr1 {
@@ -25,11 +26,13 @@ header{
 	justify-content: center;
 	align-items: center;
 }
-
 #imgr2 {
 	display: grid;
 	justify-content: center;
 	align-items: center;
+}
+#imgr2 img ,#imgr1 img{
+	width: 40px;
 }
 
 #t1{
@@ -39,6 +42,7 @@ header{
 	align-content: center;
 	justify-items: start;
 	color: white;
+	font-size: 0.7em;
 }
 #hamButton {
 	display: block;
@@ -101,13 +105,6 @@ aside {
 	display: grid;
 }
 
-footer{
-    display: grid; 
-    background-color: #af6767;
-    color: white;
-
-
-}
 
 .todas{
 	display: grid;
@@ -165,18 +162,18 @@ footer{
 	grid-template-rows: 1fr 1fr 1fr;
 }
 footer{
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	background-color: #1B365C ;
 	color: white;
 	margin: 10px;
 	font-family: "Poppins", serif;
 }
 #imgf{
-	align-content: end;
 	display: grid;
 	justify-content: center;
 	margin-top: 5px;
-
+	
 }
 
 #f1{
@@ -185,9 +182,11 @@ footer{
 	display: grid;
 	padding-left: 10px;
 	align-content: center;
+
 }
 
 #f2{
+	display: grid;
 	text-align: center;
 	justify-content: center;
 }
