@@ -86,7 +86,7 @@
         grid-row: 3/4;
     }
     .burguer.responsive li {
-        display: grid;
+        display: flex;
         width: 100%;
         
     }
