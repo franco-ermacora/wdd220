@@ -313,11 +313,11 @@ aside {
 }
 
 .spot img {
-	width: 30%;
+	width: 50%;
 	background-color: white;
 }
 .spot h1  {
-	font-size: 0.3em;
+	font-size: 0.35em;
 	margin: 5px;
 	font-family: "Poppins", serif;
 	color: #1B365C;
@@ -325,7 +325,7 @@ aside {
 
 }
 .spot h2 {
-	font-size: 0.3em;
+	font-size: 0.35em;
 	margin: 5px;
 	font-family: "Poppins", serif;
 	color: #1B365C;
@@ -338,7 +338,7 @@ aside {
 	font-family: "Poppins", serif;
 	color: #1B365C;
 	text-align: center;
-	font-size: 0.3em;
+	font-size: 0.35em;
 }
 
 
