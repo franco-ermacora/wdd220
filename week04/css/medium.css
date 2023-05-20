@@ -220,6 +220,11 @@
 		display: grid;
 	}
 
+	.jous:hover {
+		background-color: #1B365C;
+		color: white;
+	}
+
 	#join p{
 		font-family: "Oswald", serif;
 		background-color: #7EA1C4;
@@ -259,6 +264,29 @@
 		font-size: 1.5em;
 	}
 	
+	#hero a{
+		grid-column: 1/2;
+		grid-row: 1/2;
+		justify-items: end;
+		align-items: end;
+		z-index: 0;
+		font-family: "Poppins", serif;
+		font-size: 1.4em;
+		display: grid;
+		margin-right: 20px;
+	}
+	#hero h2{
+		background-color: #7EA1C4;
+		border-radius: 20px;
+		padding: 10px;
+		color: white;
+	}
+	#hero h2:hover {
+		color: #7EA1C4;
+		background-color: white;
+	}
+
+
 	#news{
 		padding: 5px;
 		margin: 5px;
@@ -306,7 +334,10 @@
 		background-color: #7EA1C4;
 		margin-bottom: 10px;
 	}
-
+	.spot h3:hover {
+		background-color: #1B365C;
+		color: white;
+	}
 	.spot img {
 		width: 40%;
 		background-color: white;
@@ -344,6 +375,13 @@
 		background-color: #1B365C;
 		color: white;
         font-family: "Poppins", serif;
+	}
+	footer a{
+		color: white;
+	}
+	footer a:hover{
+		background-color: #7EA1C4;
+		color: #1B365C;
 	}
 	#imgf{
 		grid-column: 1/2;

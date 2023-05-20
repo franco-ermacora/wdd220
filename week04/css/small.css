@@ -228,6 +228,10 @@ aside {
 	font-family: "Poppins", serif;
 	display: grid;
 }
+.jous:hover {
+	background-color: #1B365C;
+	color: white;
+}
 
 #join p{
 	font-family: "Oswald", serif;
@@ -267,6 +271,27 @@ aside {
 	color: white;
 }
 
+#hero a{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	justify-items: end;
+	align-items: end;
+	z-index: 0;
+	font-family: "Poppins", serif;
+	font-size: 1em;
+	display: grid;
+	margin-right: 20px;
+}
+#hero h2{
+	background-color: #7EA1C4;
+	border-radius: 20px;
+	padding: 10px;
+	color: white;
+}
+#hero h2:hover {
+	color: #7EA1C4;
+	background-color: white;
+}
 
 #news{
 	padding: 5px;
@@ -312,6 +337,10 @@ aside {
 	background-color: #7EA1C4;
 
 }
+.spot h3:hover {
+	background-color: #1B365C;
+	color: white;
+}
 
 .spot img {
 	width: 50%;
@@ -351,6 +380,9 @@ footer{
 	margin: 10px;
 	font-family: "Poppins", serif;
 }
+footer a{
+	color: white;
+}
 #imgf{
 	display: grid;
 	justify-content: center;
@@ -378,11 +410,7 @@ footer{
 	justify-content: center;
 	border-top: 1px solid #999;
 }
-.spot{
-	border: 2px solid black;
-	margin: 5px;
-	padding-left: 5px;
-}
+
 
 
 
