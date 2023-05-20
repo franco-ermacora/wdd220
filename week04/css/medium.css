@@ -264,14 +264,14 @@
 		font-size: 1.5em;
 	}
 	
-	#hero a{
+	#herodiv{
 		grid-column: 1/2;
 		grid-row: 1/2;
 		justify-items: end;
 		align-items: end;
 		z-index: 0;
 		font-family: "Poppins", serif;
-		font-size: 1.4em;
+		font-size: 1.2em;
 		display: grid;
 		margin-right: 20px;
 	}

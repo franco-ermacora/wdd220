@@ -28,3 +28,17 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 }).format(now);
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+
+const join = new Date();
+
+const dia = join.getDay()
+
+if (dia == 1 || dia == 2)
+	{
+		document.getElementById('herodiv').style.display = 'grid';
+	}
+
+else 
+	document.getElementById('herodiv').style.display = 'none';
+

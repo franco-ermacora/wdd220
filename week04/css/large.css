@@ -130,6 +130,7 @@
 		color: white;
 	}
 	
+	
 	#weather{
 		padding: 10px;
 		margin: 5px;
@@ -244,17 +245,19 @@
 		font-size: 1.8em;
 	}
 
-	#hero a{
+	#herodiv{
 		grid-column: 1/2;
 		grid-row: 1/2;
 		justify-items: end;
 		align-items: end;
 		z-index: 0;
 		font-family: "Poppins", serif;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		display: grid;
 		margin-right: 20px;
 	}
+	
+
 	#hero h2{
 		background-color: #7EA1C4;
 		border-radius: 20px;
