@@ -249,13 +249,15 @@
 	#herodiv{
 		grid-column: 1/2;
 		grid-row: 1/2;
-		justify-items: end;
+		justify-items: center;
 		align-items: end;
+		text-align: center;
+		justify-content: center;
 		z-index: 0;
 		font-family: "Poppins", serif;
-		font-size: 1.6em;
+		font-size: 1em;
 		display: grid;
-		margin-right: 20px;
+		margin-left: 30px;
 	}
 	
 
