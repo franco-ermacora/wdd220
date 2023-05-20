@@ -34,7 +34,7 @@ const join = new Date();
 
 const dia = join.getDay()
 
-if (dia == 6 || dia == 2)
+if (dia == 1 || dia == 2)
 	{
 		document.getElementById('herodiv').style.display = 'grid';
 	}
