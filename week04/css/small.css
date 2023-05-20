@@ -3,7 +3,9 @@
 nav {
 	margin: 10px auto;
 }
-
+body a{
+	text-decoration: none;
+}
 header{
 	background-color: #1B365C;
 	font-family: "Poppins", serif;
@@ -103,7 +105,7 @@ aside {
 .todas{
 	display: grid;
 	grid-template-rows: repeat(6, 250px);
-	grid-template-columns: 300px;
+	grid-template-columns: 100%;
 	padding: 10px;
 	justify-content: center;
 }
@@ -288,8 +290,7 @@ aside {
 	padding: 5px;
 	font-family: "Oswald", serif;
 	text-align: center;
-	background-color: white;
-	font-size: 0.6em;
+	font-size: 0.7em;
 }
 
 
@@ -317,16 +318,16 @@ aside {
 	background-color: white;
 }
 .spot h1  {
-	font-size: 0.35em;
-	margin: 5px;
+	font-size: 0.7em;
+	margin: 2px;
 	font-family: "Poppins", serif;
 	color: #1B365C;
 	text-align: center;
 
 }
 .spot h2 {
-	font-size: 0.35em;
-	margin: 5px;
+	font-size: 0.6em;
+	margin: 2px;
 	font-family: "Poppins", serif;
 	color: #1B365C;
 	text-align: center;
@@ -334,11 +335,11 @@ aside {
 
 
 .spot h3{
-	margin: 5px;
+	margin: 2px;
 	font-family: "Poppins", serif;
 	color: #1B365C;
 	text-align: center;
-	font-size: 0.35em;
+	font-size: 0.5em;
 }
 
 
