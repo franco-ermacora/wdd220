@@ -256,7 +256,7 @@ aside {
 }
 #hero picture.heroimg img {
 	width: 	100%;
-	height: 235px;
+	height: 100%;
 	object-fit: cover;
 }
 
