@@ -397,4 +397,68 @@
 
 	
 
+
+/*Discover page*/
+.discover {
+	display: grid;
+	padding: 10px;
+	margin: 10px;
+	grid-template-columns: 1fr;
 }
+
+.discover div{
+	background-color: #7EA1C4;
+	border: 2px solid #1B365C;
+	display:grid;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.discover picture{
+	display: grid;
+	justify-items: center;
+	font-size: 1.7em;
+	color:white;
+	font-family: "Oswald", sans-serif;
+	text-align: center;
+}
+
+
+.discover h1 {
+	color: #1B365C;
+	font-family: "Poppins", sans-serif;
+}
+
+.discover img{
+	border: 2px solid #1B365C;
+	margin: 20px;
+}
+
+.discover img:hover{
+	transition: transform .5s;
+    box-shadow: 5px 5px 10px #1B365C;
+    transform: scale(1.05);
+}
+
+
+#peopleVisit {
+	color: white;
+	font-size: 1.7em;
+	background-color: #7EA1C4;
+	text-align: center;
+	display: grid;
+	align-content: center;
+	font-family: "Oswald", sans-serif;
+}
+
+	
+}
+
+
+
+
+
+
+
+
+

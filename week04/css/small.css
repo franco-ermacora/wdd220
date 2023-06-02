@@ -429,3 +429,49 @@ footer a{
 
 
 
+/*Discover page*/
+.discover {
+	display: grid;
+	padding: 10px;
+	margin: 10px;
+	grid-template-columns: 1fr;
+}
+
+.discover div{
+	background-color: #7EA1C4;
+	border: 2px solid #1B365C;
+	display:grid;
+	margin: 10px auto;
+	padding: 10px;
+	display: grid;
+	justify-items: center;
+}
+
+.discover picture{
+	display: grid;
+	justify-items: center;
+	font-size: 0.9em;
+	color:#1B365C;
+	font-family: "Oswald", sans-serif;
+	text-align: center;
+}
+
+.discover h1 {
+	color: #1B365C;
+	font-family: "Poppins", sans-serif;
+}
+
+.discover img{
+	border: 2px solid #1B365C;
+	margin: 20px;
+}
+
+#peopleVisit {
+	color: #1B365C;
+	font-size: 0.9em;
+	background-color: #7EA1C4;
+	text-align: center;
+	display: grid;
+	align-content: center;
+	font-family: "Oswald", sans-serif;
+}
