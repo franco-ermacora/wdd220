@@ -18,7 +18,7 @@
         padding: 0.75rem 1rem;
     }
 
-    #imgh{
+    header #imgh{
         justify-content: end;
         display: grid;
         grid-column: 1/2;
@@ -365,6 +365,9 @@
 	{
 		color: white;
 	}
+	footer img{
+		width: 150px;
+	}
 	#imgf{
 		grid-column: 1/2;
 		align-content: center;
@@ -414,7 +417,7 @@
 	padding: 10px;
 }
 
-.discover picture{
+.discover p{
 	display: grid;
 	justify-items: center;
 	font-size: 1.7em;

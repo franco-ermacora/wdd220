@@ -17,6 +17,7 @@ header{
 	align-items: center;
 	margin-left: 5px;
 	margin-top: 10px;
+	
 }
 
 #imgr1 {
@@ -392,6 +393,9 @@ footer{
 footer a{
 	color: white;
 }
+footer img{
+	width: 150px;
+}
 #imgf{
 	display: grid;
 	justify-content: center;
@@ -447,7 +451,7 @@ footer a{
 	justify-items: center;
 }
 
-.discover picture{
+.discover p{
 	display: grid;
 	justify-items: center;
 	font-size: 0.9em;
