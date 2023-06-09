@@ -563,7 +563,7 @@ form label.top input:required:valid{
 table, th, td{
 	border: 1px solid black;
 	border-collapse: collapse;
-	font-size: em;
+	font-size: .7em;
 	font-family: "Poppins",sans-serif;
 	color: #1B365C;
 	text-align: center;
