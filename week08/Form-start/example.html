@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Solicitudes de pensiones</title>
+
+
+<script language="javascript" type="text/javascript" src="./includes/js/funciones.js"></script> <!--// Incluyo el archivos de funciones javascript//-->
+<link rel="STYLESHEET" type="text/css" href="./css/stylo.css"> <!--// Incluyo el archivos de estilo css//-->
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+<script language="JavaScript"> <!--// funcion javascript para validar campos de textos//-->
+
+function validar(idcampo, mensaje) {
+
+var cadena = document.getElementById(idcampo).value;
+
+var exp_reg = /^[a-z\u00C0-\u00ff]+$/i;
+
+var verifica = exp_reg.test(cadena);
+
+if (verifica == true){
+
+//alert('ok');
+
+document.getElementById(mensaje).innerHTML = "Correcto";
+
+}else {
+
+//alert('error');
+
+document.getElementById(mensaje).innerHTML = "Incorrecto";
+
+return false;
+
+}
+
+}
+//<![CDATA[
+function edad(Fecha){
+fecha = new Date(Fecha);
+hoy = new Date();
+ed = parseInt((hoy -fecha)/365/24/60/60/1000);
+document.getElementById('pepe').value = "tienes " + ed + " años";
+
+}
+//]]>
+</script>
+</head>
+
+
+<BODY>
+
+
+<FORM name="form" action="procesosolicitud.php" method="GET">
+<!--// <img src="logo.gif" align=right WIDTH=90, HEIGTH=90>//-->
+<h1><center>CPS 5110 -Solicitud de pension-</h1></center>
+
+<table align="center" width=1100 border=10 >
+
+<tr> <td>Seleccione delegacion</td>
+<td>
+<?php combo("enabled","dpto","id_dpto","texto_dpto","dbf ley.departamento"); ?>
+</td>
+</tr>
+
+<tr>
+<td> Numero de solicitud</td> <td><INPUT type="text" name="3"
+</td>
+</tr>
+
+<tr>
+<td> Numero de expediente </td> <td><INPUT type="text" name="6"></td>
+</tr>
+<tr>
+<td> Numero de expediente clasificado</td> <td><INPUT type="text" name="4"></td>
+</tr>
+
+<tr>
+<td>Apellido y Nombre</td> <td><INPUT type="text" name="1" size="50" maxlength="50" onkeyup="validar(this.id,'mensaje_nombre');" id="nombre">
+
+<span id="mensaje_nombre"></span>
+</td>
+</tr>
+
+<tr>
+<td> Tipo y numero de documento</td> <td> <?php combo("enabled","depto2","id_tdoc","texto_tdoc","d bfley.tipodocumento");?>
+<INPUT type="text" name="nacio" size="10" maxlength="8"> Fecha de nacimiento
+<input name="fecha" type="text" size="10" maxlength="10" onKeyUp = "this.value=formateafecha(this.value);">
+Edad<INPUT type="text" name="edad" size="2" maxlength="2" onKeyUp = "this.value=DateDiff(document.form.nacio.value );"> Sexo<?php combo("enabled","sexo","id_sexo","texto_sexo","dbf ley.sexo"); ?></td>
+</tr>
+
+<tr>
+<td> Domicilio</td> <td><INPUT type="text" name="7" size="50" maxlength="50"><?php combo("enabled","loca","id","texto","dbfley.locali dad");?></td>
+</tr>
+<!--//<tr>
+<td> Fecha de nacimiento</td> <td><INPUT type="text" name="8"></td>
+
+<td> Fecha de nacimiento</td> <td> <input name="fecha" type="text" size="10" maxlength="10" onKeyUp = "this.value=formateafecha(this.value);"></td>
+
+
+
+</tr>//-->
+<tr>
+<td> Articulo</td><td><?php combo("enabled","arti","art","descart","dbfley.art iculos");?></td>
+</tr>
+<tr>
+<td> Inspector</td> <td><?php combo("enabled","insp","id_inspector","texto_inspe ctor","dbfley.inspector");?></td>
+</tr>
+<tr>
+<td> Seccional</td> <td><?php combo("enabled","seccion","id_seccional","texto_se ccional","dbfley.seccional");?></td>
+</tr>
+<!--//<tr>
+<td><input type="checkbox" value="1″ name="represent" onclick="btTutorial.disabled = !this.checked">Representante </td>
+<td><input type="text" value="Enviar" name="btTutorial" disabled></td>
+</tr>//-->
+
+<!--// <tr>
+<td><input type="checkbox" value="1″ name="represent" onclick="uno.disabled = !this.checked;dos.disabled = !this.checked;tres.disabled = !this.checked">Representante </td>
+<td><input type="text" value="Enviar" name="uno" size="5" maxlength="5" disabled>
+<input type="text" value="Env" name="dos" size="5" maxlength="5" disabled>
+<input type="text" value="Envar" name="tres" size="5" maxlength="5" disabled></td>
+</tr>//-->
+
+
+<tr>
+<td><input type="checkbox" name="represent" value="1″ onclick="uno.disabled = !this.checked;dos.disabled = !this.checked;tres.disabled = !this.checked;cuatro.disabled = !this.checked">Representante </td>
+<td> Tipo y numero de documento <?php combo("disabled","uno","id_tdoc","texto_tdoc","dbf ley.tipodocumento");?>
+<INPUT type="text" name="dos" size="8" maxlength="8" disabled> Fecha de nacimiento
+<input name="tres" type="text" size="10" maxlength="10" onKeyUp = "this.value=formateafecha(this.value);" disabled>
+Edad<INPUT type="text" name="cuatro" size="1" maxlength="2" onKeyUp = "this.value=DateDiff(document.form.nacio.value );" disabled></td>
+</tr>
+
+<tr>
+<td> Fecha de iniciacion</td>
+<td> <input name="fecha" type="text" id="fecha" value="<?php echo date("d/m/Y"); ?>" </td>
+</tr>
+<tr>
+<td>Ubicacion-Listado</td> <td><?php combo("enabled","ubica","id_ubi","texto_ubi","dbfl ey.ubicacion");?></td>
+</tr>
+
+<tr>
+<td> Observaciones</td> <td><INPUT type="text" name="15" size="100" maxlength="400"></td>
+</tr>
+
+<!--//
+
+ESTO NO FUNCIONA:
+<tr>
+<td> <input type="text" name="textfield" onblur="edad(this.value)" /></td>
+<td><input type="text" name="pepe" id="pepe" /></td>
+</tr>//-->
+
+</table>
+
+<input type="submit" name="boton1" value="Aceptar y Guardar Solicitud" class="boton">
+
+
+
+<!--//la clase boton esta definida en el archivo stylo.css//-->
+
+
+
+
+</FORM>
+<!--//
+ESTO SI FUNCIONA:
+
+<input type="text" name="textfield" onblur="edad(this.value)" />
+<input type="text" name="pepe" id="pepe" />//-->
+
+</BODY>
+</html>
