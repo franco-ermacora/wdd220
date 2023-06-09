@@ -42,3 +42,9 @@ if (dia == 1 || dia == 2)
 else 
 	document.getElementById('herodiv').style.display = 'none';
 
+
+window.onload = function() {
+    let currentDate = new Date();
+    let hiddenDate = document.getElementById("hiddenDate");
+    hiddenDate.value = currentDate.toLocaleDateString();
+}

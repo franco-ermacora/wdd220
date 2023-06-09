@@ -55,7 +55,6 @@
                 <label class="top">Last Name*<input type="text" name="lname" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="12345678" required></label> 
                 <label class="top">Email* <input type="email" name="email" placeholder="some@text.com" required></label> 
-                <label class="top">Business* <input type="text" name="text" required></label> 
             </fieldset>
 
             <fieldset>
@@ -69,10 +68,10 @@
                 <table>
                 <tr>
                   <th style="background-color: #7EA1C4">Benefits</th>
-                  <th style="background-color: #7EA1C4;">Np Merbership</th>
-                  <th style="background-color: #7EA1C4;">Bronze Membership</th>
-                  <th style="background-color: #7EA1C4;">Silver Membership</th>
-                  <th style="background-color: #7EA1C4;">Gold Membership</th>
+                  <th style="background-color: #7EA1C4;">Np Merbership ($0)</th>
+                  <th style="background-color: #7EA1C4;">Bronze Membership ($100)</th>
+                  <th style="background-color: #7EA1C4;">Silver Membership ($300)</th>
+                  <th style="background-color: #7EA1C4;">Gold Membership ($500)</th>
                 </tr>
                 <tr>
                   <td class="tdt">News</td>
@@ -104,9 +103,14 @@
                 </tr>
 
               </table> 
-              <label class="sbs"><textarea name="comentarios" rows="10" cols="30" placeholder="DESCRIBE YOUR BUSINESS"></textarea></label>
+                </fieldset>
 
-            </fieldset>
+                <fieldset>
+              <legend>Companies</legend>
+              <label class="top">Business* <input type="text" name="text" required></label> 
+              <label class="top"><textarea name="comentarios" rows="10" cols="30" placeholder="DESCRIBE YOUR BUSINESS"></textarea></label>
+              <input type="hidden" id="hiddenDate">
+                </fieldset>
             
             <input type="submit" value="Happy to have you!" class="submitBtn">
         </form>
