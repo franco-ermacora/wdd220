@@ -522,10 +522,10 @@ form label.top, form div {
 form label.top input, form label.top select{
     display: block;
     font-size: 1rem;
-    border: solid 1px #999;
+    border: solid 1px #1B365C;
     border-radius: 4px;
     padding: .75rem;
-    color: #555;
+    color: #1B365C;
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
@@ -563,11 +563,11 @@ form label.top input:required:valid{
 table, th, td{
 	border: 1px solid black;
 	border-collapse: collapse;
-	font-size: .7em;
+	font-size: .8em;
 	font-family: "Poppins",sans-serif;
 	color: #1B365C;
 	text-align: center;
-	padding: 5px;
+	padding: 2px;
 }
 
 
