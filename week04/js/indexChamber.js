@@ -43,8 +43,11 @@ else
 	document.getElementById('herodiv').style.display = 'none';
 
 
-window.onload = function() {
-    let currentDate = new Date();
-    let hiddenDate = document.getElementById("hiddenDate");
-    hiddenDate.value = currentDate.toLocaleDateString();
-}
+
+function getHiddenDate() {
+	let dateElement = document.querySelector("#hiddenDate");
+	dateElement.value = new Date();
+	console.log(dateElement.value)
+	};
+
+document.querySelector("#tmregister").innerHTML = getHiddenDate();

@@ -108,11 +108,13 @@
                 <fieldset>
               <legend>Companies</legend>
               <label class="top">Business* <input type="text" name="text" required></label> 
+              <label class="top">Title* <input type="text" name="text" minlength="7" required pattern="[a-zA-Z0-9]+" ></label> 
+              <label class="top">Position <input type="text" name="text"></label>
               <label class="top"><textarea name="comentarios" rows="10" cols="30" placeholder="DESCRIBE YOUR BUSINESS"></textarea></label>
-              <input type="hidden" id="hiddenDate">
+              <input type="hidden" id="hiddenDate" name="hiddenDate">
                 </fieldset>
             
-            <input type="submit" value="Happy to have you!" class="submitBtn">
+            <input type="submit" value="Happy to have you!" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
         </form>
 
     </main>
