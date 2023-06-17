@@ -1,3 +1,36 @@
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const url = "https://franco-ermacora.github.io/wdd230/week04/data.json";
 
 
@@ -9,7 +42,7 @@ async function getData() {
   };
 
   const displayData= (companies) => {
-    const cards = document.querySelector('div.cards');
+    const cards = document.querySelector('article.cards');
   
     companies.forEach((companie) => {
       let card = document.createElement('section');
@@ -32,7 +65,7 @@ async function getData() {
       web.setAttribute("href", `${companie.web}`);
       web.setAttribute("target", "_blank");
       
-  
+      card.appendChild(h2);
       card.appendChild(img);
       card.appendChild(address);
       card.appendChild(contact);
