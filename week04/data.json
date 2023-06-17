@@ -1,0 +1,84 @@
+{
+    "companies":[
+        {
+            "name": "Coco-Cola",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "CocaCola.jpg"
+        },
+
+        {
+            "name": "Carrefour",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Carrefour.jpg"
+        },
+
+        {
+            "name": "Coto",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Coto.jpg"
+        },
+
+        {
+            "name": "Epe",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Epe.jpg"
+        },
+
+        {
+            "name": "Puma",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Puma.jpg"
+        },
+
+        {
+            "name": "Nike",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Nike.jpg"
+        },
+
+        {
+            "name": "CompuTrabajo",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Cptraabajo.jpg"
+        },
+
+        {
+            "name": "Galicia",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Galicia.jpg"
+        },
+
+        {
+            "name": "Linkedin",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "Linkedin.jpg"
+        },
+
+        {
+            "name": "MiBiciTuBici",
+            "direction": "Someplace",
+            "contact": "Somephone",
+            "web": "Someurl",
+            "imageurl": "MiBici.jpg"
+        }
+
+    ]
+}

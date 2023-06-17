@@ -42,7 +42,7 @@ if (dia == 1 || dia == 2)
 else 
 	document.getElementById('herodiv').style.display = 'none';
 
-
+//Join//
 
 function getHiddenDate() {
 	let dateElement = document.querySelector("#hiddenDate");
@@ -50,4 +50,51 @@ function getHiddenDate() {
 	console.log(dateElement.value)
 	};
 
-document.querySelector("#tmregister").innerHTML = getHiddenDate();
+
+
+//Directory//
+
+const url = "data.json";
+
+
+async function getProphetData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayProphets(data.companies);
+  };
+
+  const displayProphets = (companies) => {
+    const cards = document.querySelector('div.cards');
+  
+    companies.forEach((companie) => {
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let portrait = document.createElement('img');
+      let bp = document.createElement("p");
+      let db = document.createElement("p");
+  
+      h2.textContent = `${companie.name}`;
+      bp.textContent = `Place of birth: ${companie.direction}`
+      db.textContent = `Date of birth: ${companie.contact}`
+      nc.textContent = `Num of children: ${companie.web}`
+  
+      
+      portrait.setAttribute('src', companie.imageurl);
+      portrait.setAttribute('alt', `Portait of ${companie.name}`);
+      portrait.setAttribute('loading', 'lazy');
+      portrait.setAttribute('width', '340');
+      portrait.setAttribute('height', '440');
+  
+      
+      card.appendChild(h2);
+      card.appendChild(db);
+      card.appendChild(bp);
+      card.appendChild(nc);
+      card.appendChild(portrait);
+  
+      cards.appendChild(card);
+    } 
+    )
+  };
+
+getProphetData();
