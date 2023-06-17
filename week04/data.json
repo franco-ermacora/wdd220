@@ -5,7 +5,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "CocaCola.jpg"
+            "imageurl": "cocacola.webp"
         },
 
         {
@@ -13,7 +13,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Carrefour.jpg"
+            "imageurl": "carrefour.webp"
         },
 
         {
@@ -21,7 +21,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Coto.jpg"
+            "imageurl": "coto.webp"
         },
 
         {
@@ -29,7 +29,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Epe.jpg"
+            "imageurl": "epe.webp"
         },
 
         {
@@ -37,7 +37,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Puma.jpg"
+            "imageurl": "puma.webp"
         },
 
         {
@@ -45,7 +45,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Nike.jpg"
+            "imageurl": "nike.webp"
         },
 
         {
@@ -53,7 +53,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Cptraabajo.jpg"
+            "imageurl": "cptrabajo.webp"
         },
 
         {
@@ -61,7 +61,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Galicia.jpg"
+            "imageurl": "galicia.webp"
         },
 
         {
@@ -69,7 +69,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "Linkedin.jpg"
+            "imageurl": "linkedin.webp"
         },
 
         {
@@ -77,7 +77,7 @@
             "direction": "Someplace",
             "contact": "Somephone",
             "web": "Someurl",
-            "imageurl": "MiBici.jpg"
+            "imageurl": "mibici.webp"
         }
 
     ]
