@@ -54,47 +54,63 @@ function getHiddenDate() {
 
 //Directory//
 
-const url = "data.json";
+const grid = document.querySelector("#grid");
+const list = document.querySelector("#list");
+const display = document.querySelector("article");
+
+grid.addEventListener("click", () => {
+    chanceView("grid")
+});
+list.addEventListener("click", () => {
+    chanceViewView("list")
+});
 
 
-async function getProphetData() {
+
+
+const url = "https://franco-ermacora.github.io/wdd230/week04/data.json";
+
+
+async function getData() {
     const response = await fetch(url);
     const data = await response.json();
-    displayProphets(data.companies);
+    displayData(data.companies);
   };
 
-  const displayProphets = (companies) => {
-    const cards = document.querySelector('div.cards');
+  const displayData = (companies) => {
+    const cards = document.querySelector('.list');
   
     companies.forEach((companie) => {
       let card = document.createElement('section');
+	  let name = document.createElement('div');
       let h2 = document.createElement('h2');
-      let portrait = document.createElement('img');
-      let bp = document.createElement("p");
-      let db = document.createElement("p");
+      let img = document.createElement('img');
+      let address = document.createElement("p");
+      let contact = document.createElement("p");
+	  let web = document.createElement("a");
   
       h2.textContent = `${companie.name}`;
-      bp.textContent = `Place of birth: ${companie.direction}`
-      db.textContent = `Date of birth: ${companie.contact}`
-      nc.textContent = `Num of children: ${companie.web}`
+      address.textContent = `${companie.direction}`;
+      contact.textContent = `${companie.contact}`;
+      web.textContent = `${companie.web}`;
   
       
-      portrait.setAttribute('src', companie.imageurl);
-      portrait.setAttribute('alt', `Portait of ${companie.name}`);
-      portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '340');
-      portrait.setAttribute('height', '440');
+      img.setAttribute('src', `images/${companie.imageurl}`);
+      img.setAttribute('alt', `Logo of ${companie.name}`);
+      address.setAttribute("class", "directory-address");
+      web.setAttribute("href", `${companie.web}`);
+      web.setAttribute("target", "_blank");
   
       
-      card.appendChild(h2);
-      card.appendChild(db);
-      card.appendChild(bp);
-      card.appendChild(nc);
-      card.appendChild(portrait);
-  
+      card.appendChild(imageurl);
+      name.appendChild(h2);
+      card.appendChild(name);
+      card.appendChild(address);
+      card.appendChild(web);
+
       cards.appendChild(card);
     } 
     )
   };
 
-getProphetData();
+getData();
