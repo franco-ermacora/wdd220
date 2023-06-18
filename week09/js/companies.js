@@ -16,21 +16,6 @@ function showList() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const url = "https://franco-ermacora.github.io/wdd230/week04/data.json";
 
 
@@ -64,6 +49,7 @@ async function getData() {
       address.setAttribute("class", "directory-address");
       web.setAttribute("href", `${companie.web}`);
       web.setAttribute("target", "_blank");
+
       
       card.appendChild(h2);
       card.appendChild(img);

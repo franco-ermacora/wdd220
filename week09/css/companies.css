@@ -1,31 +1,19 @@
-main section {
-    background-color: lightcyan;
-    margin: .5rem;
-    padding: 1rem;
-    box-shadow: 1px 1px 5px 1px black;
-
-}
-body {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+#partners{
+	text-align: center;
 }
 main img {
     box-shadow: 3px 3px 10px 3px black;
 }
-main article {
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     padding: .5rem;
     box-shadow: 3px 3px 10px 3px black;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
-main {
+
+.companiesMain {
 	margin: 0 auto;
 	padding: 0.5rem;
 	background-color: #fff;
@@ -45,10 +33,12 @@ main {
 	font-weight: 700;
 }
 
-section {
+.companiesMain section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #eee;
+	background-color: #834545;
+	text-align: center;
+	margin: 10px;
 }
 
 .grid {
@@ -104,24 +94,22 @@ section {
 	background-color: #bed;
 }
 
-section h2 {
-	font-size: 1.5rem;
-}
 
-section p {
+.companiesMain section p {
 	font-weight: 600;
-	font-size: smaller;
+	font-size: 1rem;
 	padding: 3px;
+	font-family: "Arial", serif;
 }
 
-section a {
+.companiesMain section a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
 	color: navy;
 	letter-spacing: 1.1pt;
 }
 
-img {
+.companiesMain img {
 	
 	max-width: 100%;
 }
