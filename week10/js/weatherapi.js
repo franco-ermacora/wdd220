@@ -2,9 +2,12 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const windSpeed = document.querySelector("#wind");
+const feelLike = document.querySelector("#feel");
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&exclude=hourly,daily&appid=5517f27f684000efd143ddc0886050fc&units=metric';
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Rosario&wind.speed&exclude=hourly,daily&appid=5517f27f684000efd143ddc0886050fc&units=metric';
 
 
 
@@ -30,12 +33,17 @@ function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-  
+    const desc = weatherData.weather[0].description.toUpperCase();
+    const wspeed = weatherData.wind.speed * 3.6;
+    const flike = weatherData.main.feels_like.toFixed(0);
+
+
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
-}
+    windSpeed.textContent = wspeed.toFixed(1);
+    feelLike.textContent = flike;
 
+}
 
 apiFetch();

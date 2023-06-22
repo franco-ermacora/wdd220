@@ -1,18 +1,18 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const gridbutton = document.querySelector("#gridC");
+const listbutton = document.querySelector("#listC");
+const displaymain = document.querySelector("article");
 
 
 gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
+	displaymain.classList.add("grid");
+	displaymain.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	displaymain.classList.add("list");
+	displaymain.classList.remove("grid");
 }
 
 
@@ -43,7 +43,7 @@ async function getData() {
       web.textContent = `${companie.web}`
   
       
-      img.setAttribute('src', `images/${companie.imageurl}`);
+      img.setAttribute('src', `/week04/images/${companie.imageurl}`);
       img.setAttribute('alt', `Logo of ${companie.name}`);
       img.setAttribute('loading', 'lazy');
       address.setAttribute("class", "directory-address");

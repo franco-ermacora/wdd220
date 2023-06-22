@@ -54,36 +54,36 @@ function getHiddenDate() {
 
 //Directory//
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("div.cards");
+const gridbutton = document.querySelector("#gridC");
+const listbutton = document.querySelector("#listC");
+const displaymain = document.querySelector("article");
 
 
 gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
+	displaymain.classList.add("grid");
+	displaymain.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	displaymain.classList.add("list");
+	displaymain.classList.remove("grid");
 }
 
 
-const url = "https://franco-ermacora.github.io/wdd230/week04/data.json";
+const urldirectory = "https://franco-ermacora.github.io/wdd230/week04/data.json";
 
 
 
 async function getData() {
-    const response = await fetch(url);
+    const response = await fetch(urldirectory);
     const data = await response.json();
     displayData(data.companies);
   };
 
   const displayData= (companies) => {
-    const cards = document.querySelector('div.cards');
+    const cards = document.querySelector('article.cards');
   
     companies.forEach((companie) => {
       let card = document.createElement('section');
@@ -105,6 +105,7 @@ async function getData() {
       address.setAttribute("class", "directory-address");
       web.setAttribute("href", `${companie.web}`);
       web.setAttribute("target", "_blank");
+
       
       card.appendChild(h2);
       card.appendChild(img);
@@ -119,3 +120,53 @@ async function getData() {
   };
 
 getData();
+
+
+
+//Weather Index//
+
+const currentTemp = document.querySelector('#grade');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('#figcaption');
+const windSpeed = document.querySelector("#wind");
+const feelLike = document.querySelector("#feel");
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Rosario&appid=5517f27f684000efd143ddc0886050fc&units=metric';
+
+
+
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetch();
+
+
+function  displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description.toUpperCase();
+	const wspeed = weatherData.wind.speed * 3.6;
+    const flike = weatherData.main.feels_like.toFixed(0);
+  
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+	windSpeed.textContent = wspeed.toFixed(1);
+    feelLike.textContent = flike;
+}
+
+
+apiFetch();
