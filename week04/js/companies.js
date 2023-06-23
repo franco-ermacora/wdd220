@@ -43,7 +43,7 @@ async function getData() {
       web.textContent = `${companie.web}`
   
       
-      img.setAttribute('src', `/week04/images/${companie.imageurl}`);
+      img.setAttribute('src', `images/${companie.imageurl}`);
       img.setAttribute('alt', `Logo of ${companie.name}`);
       img.setAttribute('loading', 'lazy');
       address.setAttribute("class", "directory-address");
