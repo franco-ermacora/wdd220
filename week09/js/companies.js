@@ -1,5 +1,5 @@
-const gridbutton = document.querySelector("#gridC");
-const listbutton = document.querySelector("#listC");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 const displaymain = document.querySelector("article");
 
 
@@ -16,12 +16,12 @@ function showList() {
 }
 
 
-const url = "https://franco-ermacora.github.io/wdd230/week04/data.json";
+const urld = "https://franco-ermacora.github.io/wdd230/week04/data.json";
 
 
 
 async function getData() {
-    const response = await fetch(url);
+    const response = await fetch(urld);
     const data = await response.json();
     displayData(data.companies);
   };

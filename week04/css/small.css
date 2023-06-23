@@ -601,7 +601,7 @@ table, th, td{
 }
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: 1fr;
     padding: .5rem;
     box-shadow: 3px 3px 10px 3px black;
 }
@@ -612,32 +612,36 @@ table, th, td{
 	margin: 0 auto;
 	padding: 0.5rem;
 	background-color: #fff;
-	font-family: Roboto, Helvetica, sans-serif;
+	
 }
 
 .menu {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color:#1B365C;
 	text-align: center;
+	
 }
 
 .menu button {
 	padding: 1rem;
 	font-weight: 700;
+	font-family: "Poppins", sans-serif;
 }
 
 .companiesMain section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #834545;
+	background-color: #7EA1C4;
 	text-align: center;
+	font-family: "Poppins", sans-serif;
+	margin: 10px;
 }
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: 1fr;
 	grid-gap: 5px;
 	align-items: center;
 }
@@ -647,7 +651,7 @@ table, th, td{
 }
 
 .grid img {
-	border: 1px solid #fff;
+	border: 1px solid #000000;
 	box-shadow: 0 0 10px #333;
 }
 
@@ -655,9 +659,6 @@ table, th, td{
 	margin: 0.1rem;
 }
 
-.grid h2 {
-	display: none;
-}
 
 .list {
 	display: flex;
@@ -680,25 +681,25 @@ table, th, td{
 }
 
 .list section h2 {
-	font-size: 1rem;
+	font-size: 0.7rem;
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: white;
 }
 
 
 .companiesMain section p {
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 0.7rem;
 	padding: 3px;
-	font-family: "Arial", serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .companiesMain section a {
 	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
+	font-size: 0.7rem;
 	color: navy;
 	letter-spacing: 1.1pt;
 }
