@@ -653,10 +653,17 @@ table, th, td{
 .list section h2 {
 	font-size: 1.5rem;
 	font-family: Roboto, Helvetica, sans-serif;
+	display: grid;
+	align-items: center;
+	margin-left: 200px;
 }
 
 .list section:nth-child(even) {
 	background-color: white;
+}
+
+.list section a{
+	grid-column: 4/5;
 }
 
 

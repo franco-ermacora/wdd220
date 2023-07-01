@@ -4,7 +4,7 @@
             "name": "Coco-Cola",
             "direction": "Avenida Lopez 1345",
             "contact": "135792468",
-            "web": "CocaCola.Com",
+            "web": "web.com",
             "imageurl": "cocacola.webp"
         },
 
@@ -12,7 +12,7 @@
             "name": "Carrefour",
             "direction": "Avenida Pellegrini 3800",
             "contact": "246813579",
-            "web": "Carrefour.com",
+            "web": "web.com",
             "imageurl": "carrefour.webp"
         },
 
@@ -20,7 +20,7 @@
             "name": "Coto",
             "direction": "Mendoza 3820",
             "contact": "864297531",
-            "web": "Coto.com",
+            "web": "web.com",
             "imageurl": "coto.webp"
         },
 
@@ -28,15 +28,15 @@
             "name": "Epe",
             "direction": "Boulebard Oroño 2458",
             "contact": "975318642",
-            "web": "Epe.com.ar",
+            "web": "web.com",
             "imageurl": "epe.webp"
         },
 
         {
             "name": "Puma",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Brazilia 345",
+            "contact": "987654321",
+            "web": "web.com",
             "imageurl": "puma.webp"
         },
 
@@ -44,7 +44,7 @@
             "name": "Nike",
             "direction": "Corriente 2560",
             "contact": "246897531",
-            "web": "Nike.com",
+            "web": "web.com",
             "imageurl": "nike.webp"
         },
 
@@ -52,7 +52,7 @@
             "name": "CompuTrabajo",
             "direction": "Buenos Aires 7850",
             "contact": "284691735",
-            "web": "Computrabajo.com",
+            "web": "web.com",
             "imageurl": "cptrabajo.webp"
         },
 
@@ -60,7 +60,7 @@
             "name": "Galicia",
             "direction": "Boulebard Oroño 3207",
             "contact": "123456789",
-            "web": "Galicia.com",
+            "web": "web.com",
             "imageurl": "galicia.webp"
         },
 
@@ -68,7 +68,7 @@
             "name": "Linkedin",
             "direction": "Carlos M. Della Paolera 261, C1001 CABA",
             "contact": "011 4316-1900",
-            "web": "https://www.linkedin.com/",
+            "web": "web.com",
             "imageurl": "linkedin.webp"
         },
 
@@ -76,7 +76,7 @@
             "name": "MiBiciTuBici",
             "direction": "Rosario",
             "contact": "147",
-            "web": "https://www.mibicitubici.gob.ar/",
+            "web": "web.com",
             "imageurl": "mibici.webp"
         }
 

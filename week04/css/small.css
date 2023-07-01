@@ -674,7 +674,7 @@ table, th, td{
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -688,14 +688,19 @@ table, th, td{
 }
 
 .list section h2 {
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	font-family: Roboto, Helvetica, sans-serif;
+	text-align: left;
 }
 
 .list section:nth-child(even) {
 	background-color: white;
 }
 
+
+.list section a{
+	grid-column: 1/2;
+}
 
 .companiesMain section p {
 	font-weight: 600;
