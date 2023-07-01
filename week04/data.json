@@ -2,33 +2,33 @@
     "companies":[
         {
             "name": "Coco-Cola",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Avenida Lopez 1345",
+            "contact": "135792468",
+            "web": "CocaCola.Com",
             "imageurl": "cocacola.webp"
         },
 
         {
             "name": "Carrefour",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Avenida Pellegrini 3800",
+            "contact": "246813579",
+            "web": "Carrefour.com",
             "imageurl": "carrefour.webp"
         },
 
         {
             "name": "Coto",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Mendoza 3820",
+            "contact": "864297531",
+            "web": "Coto.com",
             "imageurl": "coto.webp"
         },
 
         {
             "name": "Epe",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Boulebard Oroño 2458",
+            "contact": "975318642",
+            "web": "Epe.com.ar",
             "imageurl": "epe.webp"
         },
 
@@ -42,41 +42,41 @@
 
         {
             "name": "Nike",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Corriente 2560",
+            "contact": "246897531",
+            "web": "Nike.com",
             "imageurl": "nike.webp"
         },
 
         {
             "name": "CompuTrabajo",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Buenos Aires 7850",
+            "contact": "284691735",
+            "web": "Computrabajo.com",
             "imageurl": "cptrabajo.webp"
         },
 
         {
             "name": "Galicia",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Boulebard Oroño 3207",
+            "contact": "123456789",
+            "web": "Galicia.com",
             "imageurl": "galicia.webp"
         },
 
         {
             "name": "Linkedin",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Carlos M. Della Paolera 261, C1001 CABA",
+            "contact": "011 4316-1900",
+            "web": "https://www.linkedin.com/",
             "imageurl": "linkedin.webp"
         },
 
         {
             "name": "MiBiciTuBici",
-            "direction": "Someplace",
-            "contact": "Somephone",
-            "web": "Someurl",
+            "direction": "Rosario",
+            "contact": "147",
+            "web": "https://www.mibicitubici.gob.ar/",
             "imageurl": "mibici.webp"
         }
 

@@ -487,6 +487,7 @@ form legend{
     margin: 0 1rem;
     padding: 0 .5rem;
 	font-family: "Oswald",sans-serif;
+	font-size: 1.5rem;
 }
 
 form label.top, form div {
