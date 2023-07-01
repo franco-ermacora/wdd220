@@ -706,6 +706,16 @@ table, th, td{
 }
 
 
+/* Contact */
+#mainContact h1{
+	font-size: 1.4em;
+	align-items: center;
+	text-align: center;
+}
+
+#mainContact{
+	display: grid;
+}
 
 
 
