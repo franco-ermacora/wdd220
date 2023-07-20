@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Bountiful Foods</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" id="fre">Home</a>
+            <img src="images/Logoindex.jpg" alt="logo" id="imgn">
+            <a href="aboutUs.html"id="aus">About Us</a>
+        </nav>
+    </header>
+
+    <main class="mainFresh">
+        <form method="getDrink">
+            <fieldset>
+                <legend>Your info</legend>
+                <label class="top"><span class="text">Name*</span><input type="text" name="pname" id="name" required></label>
+                <label class="top"><span class="text">Phone Number*</span><input type="tel" name="phone" id="phone" required></label>
+                <label class="top"><span class="text">Email*</span><input type="email" name="email" id="email" placeholder="someone@example.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your healthy drink</legend>
+                <p><span class="fruit-text">Choise your fruits!</span></p>
+                <div class="ing">
+                    <select name="fruit1" id="ing1">
+                        <option value="">1st Fruit</option>
+                      </select>
+                    <select name="fruit2" id="ing2">
+                        <option value="">2nd Fruit</option>
+                    </select>
+                    <select name="fruit3" id="ing3">
+                        <option value="">3th Fruit</option>
+                    </select>
+                    <label class="top"><span class="ingText">Instructions <hr></span><textarea name="instructions" id="instructions"></textarea></label>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Shakes!" class="submitBtn" name="submitButton">
+        </form>
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <h1>Bountiful Foods</h1>
+        <h2>Know our social networks</h2>
+        <a href="https://www.instagram.com/" target="_blank" id="face"><img src="images/instagramlogo.png" alt="insta"></a>
+        <a href="https://es-la.facebook.com/" target="_blank" id="insta"><img src="images/facebooklogo.png" alt=""></a>
+        <a href="https://twitter.com" target="_blank" id="twit"><img src="images/twitterlogo.png" alt=""></a>
+        <h3 id="mail">BountifulFood@mail.com</h3>
+        <h3 id="tel">Tel-Phone: +1(806)984381</h3>
+        <div id="f3">&copy;<span id="year"></span> ⌨ Franco Ermacora ⌨ Rosario ⌨ Last Update: <span id="time"></span></div>
+    
+    </footer>
+
+
+
+<script src="js/fresh.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
